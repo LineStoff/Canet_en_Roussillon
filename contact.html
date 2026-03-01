@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <div class="logo">Appartement Méditerranée</div>
+    <nav id="menu">
+        <a href="index.html">Accueil</a>
+        <a href="appartement.html">L'appartement</a>
+        <a href="reservation.html">Réservation</a>
+        <a href="proximite.html">À proximité</a>
+        <a href="syrendre.html">S'y rendre</a>
+        <a href="contact.html">Contact</a>
+        <a href="en/contact.html">EN</a>
+    </nav>
+    <div class="menu-btn" onclick="toggleMenu()">☰</div>
+</header>
+
+<section class="content">
+    <h1>Contacter l'hôte</h1>
+
+    <form action="https://formspree.io/f/mojnznpp" method="POST" class="contact-form">
+        <label>Nom :</label>
+        <input type="text" name="Nom" required>
+
+        <label>Email :</label>
+        <input type="email" name="Email" required>
+
+        <label>Message :</label>
+        <textarea name="Message" rows="6" required></textarea>
+
+        <button type="submit" class="btn">Envoyer</button>
+    </form>
+
+    <p class="form-note">Vous recevrez une réponse prochainement.</p>
+</section>
+
+<footer>
+    <p>© 2026 - Location Méditerranée</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

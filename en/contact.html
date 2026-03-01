@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+
+<header>
+    <div class="logo">Mediterranean Apartment</div>
+    <nav id="menu">
+        <a href="index.html">Home</a>
+        <a href="apartement.html">The Apartment</a>
+        <a href="booking.html">Booking</a>
+        <a href="nearby.html">Nearby</a>
+        <a href="howtogetthere.html">How to Get There</a>
+        <a href="contact.html">Contact</a>
+        <a href="../contact.html">FR</a>
+    </nav>
+    <div class="menu-btn" onclick="toggleMenu()">☰</div>
+</header>
+
+<section class="content">
+    <h1>Contact the Host</h1>
+
+    <form action="https://formspree.io/f/mojnznpp" method="POST" class="contact-form">
+        <label>Name:</label>
+        <input type="text" name="Name" required>
+
+        <label>Email:</label>
+        <input type="email" name="Email" required>
+
+        <label>Message:</label>
+        <textarea name="Message" rows="6" required></textarea>
+
+        <button type="submit" class="btn">Send</button>
+    </form>
+
+    <p class="form-note">You will receive a reply soon.</p>
+</section>
+
+<footer>
+    <p>© 2026 - Mediterranean Rental</p>
+</footer>
+
+<script src="../script.js"></script>
+</body>
+</html>
