@@ -173,9 +173,9 @@ footer {
     }
 }
 
-/* --- AVIS --- */
+/* --- AVIS (version PC) --- */
 .avis {
-    background: #D7EEF7; /* bleu clair */
+    background: #D7EEF7;
     padding: 40px;
     border-radius: 10px;
 }
@@ -186,16 +186,16 @@ footer {
     gap: 20px;
 }
 
-    .avis-card {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        width: 90%; /* pour garder un peu de marge dans la bulle */
-        transform: translate(-50%, -50%);
-        opacity: 0;
-        transition: opacity 0.6s ease, transform 0.6s ease;
-        text-align: left; /* ou center si tu préfères */
-    }
+.avis-card {
+    position: relative;
+    width: calc(50% - 20px);
+    opacity: 1;
+    transform: none;
+    transition: opacity 0.6s ease, transform 0.6s ease;
+    text-align: left;
+}
+
+
 
 .avis-texte {
     font-style: italic;
@@ -327,17 +327,27 @@ height: 200px;
         box-shadow: 0 3px 10px rgba(0,0,0,0.1);
     }
 
-    /* Animation */
-  .avis-card:nth-child(1) { animation: slideAvis 15s infinite; }
-.avis-card:nth-child(2) { animation: slideAvis 15s infinite 5s; }
+/* Animation mobile */
+.avis-card:nth-child(1) {
+    animation: slideAvis 21s infinite;
+}
 
-    @keyframes slideAvis {
-        0%   { opacity: 0; }
-        10%  { opacity: 1; }
-        30%  { opacity: 1; }
-        40%  { opacity: 0; }
-        100% { opacity: 0; }
-    }
+.avis-card:nth-child(2) {
+    animation: slideAvis 21s infinite 7s;
+}
+
+.avis-card:nth-child(3) {
+    animation: slideAvis 21s infinite 14s;
+}
+
+@keyframes slideAvis {
+    0%   { opacity: 0; }
+    10%  { opacity: 1; }
+    30%  { opacity: 1; }
+    40%  { opacity: 0; }
+    100% { opacity: 0; }
+}
+
 }
 
 
@@ -356,4 +366,76 @@ height: 200px;
 /* Quand le menu est ouvert */
 nav.show + .overlay {
     display: block;
+}
+
+
+/* Bulles beiges pour les avis sur PC, taille maîtrisée */
+@media (min-width: 769px) {
+
+    .avis-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;   /* centre les bulles */
+        gap: 25px;
+    }
+
+    .avis-card {
+        position: relative;
+        flex: 0 1 320px;           /* largeur cible */
+        max-width: 340px;          /* limite max */
+        background: #F5EEDC;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+        opacity: 1;
+        transform: none;
+        text-align: left;
+    }
+}
+
+
+
+
+@media (max-width: 768px) {
+    .reservation-image {
+        width: 100%;        /* largeur de l’écran */
+        max-height: 800px;  /* ajuste la hauteur comme tu veux */
+        object-fit: cover;  /* garde un cadrage propre */
+        border-radius: 10px;
+    }
+}
+
+
+.site-title {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* espace entre le logo et le titre */
+}
+
+.site-title .logo {
+    width: 80px;   /* taille du logo */
+    height: 80px;  /* tu peux ajuster */
+    object-fit: contain;
+}
+
+
+
+
+/* Version desktop : tout sur une ligne */
+.site-title h1 .line1,
+.site-title h1 .line2 {
+    display: inline;
+}
+
+/* Version mobile : 2 lignes */
+@media (max-width: 600px) {
+    .site-title h1 .line1,
+    .site-title h1 .line2 {
+        display: block;
+        line-height: 1.2;
+    }
+
+    .site-title h1 {
+        font-size: 25px; /* Ajuste si tu veux plus petit */
+    }
 }
