@@ -19,7 +19,8 @@
         <a href="contact.html">Contact</a>
         <a href="en/booking.html">EN</a>
     </nav>
-    <div class="menu-btn" onclick="toggleMenu()">☰</div>
+    <div class="overlay"></div>
+    <div class="menu-btn">☰</div>
 </header>
 
 <section class="content">
@@ -32,7 +33,7 @@
     </div>
 
     <div class="reservation-buttons">
-        <a class="btn booking" href="TON-LIEN-BOOKING" target="_blank">Réserver sur Booking</a>
+        <a class="btn booking" href="https://www.leboncoin.fr/ad/locations_saisonnieres/2157518319" target="_blank">Réserver sur Booking</a>
         <a class="btn lbc" href="https://www.leboncoin.fr/ad/locations_saisonnieres/2157518319" target="_blank">Réserver sur Leboncoin</a>
     </div>
 
@@ -76,5 +77,24 @@
 </footer>
 
 <script src="script.js"></script>
+
+
+<script>
+    const menuBtn = document.querySelector('.menu-btn');
+    const nav = document.querySelector('#menu');
+    const overlay = document.querySelector('.overlay');
+
+    // Ouvrir / fermer le menu
+    menuBtn.addEventListener('click', () => {
+        nav.classList.toggle('show');
+    });
+
+    // Fermer en cliquant sur l'overlay
+    overlay.addEventListener('click', () => {
+        nav.classList.remove('show');
+    });
+</script>
+
+
 </body>
 </html>

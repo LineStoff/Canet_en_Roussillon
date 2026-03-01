@@ -17,9 +17,10 @@
         <a href="nearby.html">Nearby</a>
         <a href="howtogetthere.html">How to Get There</a>
         <a href="contact.html">Contact</a>
-        <a href="nearby.html">EN</a>
+        <a href="../proximite.html">FR</a>
     </nav>
-    <div class="menu-btn" onclick="toggleMenu()">☰</div>
+    <div class="overlay"></div>
+    <div class="menu-btn">☰</div>
 </header>
 
 <section class="content">
@@ -117,5 +118,24 @@
 </footer>
 
 <script src="../script.js"></script>
+
+
+<script>
+    const menuBtn = document.querySelector('.menu-btn');
+    const nav = document.querySelector('#menu');
+    const overlay = document.querySelector('.overlay');
+
+    // Ouvrir / fermer le menu
+    menuBtn.addEventListener('click', () => {
+        nav.classList.toggle('show');
+    });
+
+    // Fermer en cliquant sur l'overlay
+    overlay.addEventListener('click', () => {
+        nav.classList.remove('show');
+    });
+</script>
+
+
 </body>
 </html>
