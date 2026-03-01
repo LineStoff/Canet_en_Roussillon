@@ -205,8 +205,23 @@ footer {
 }
 
 @media (max-width: 768px) {
-    .avis-card {
-        width: 100%;
+    nav {
+        display: none;
+        flex-direction: column;
+        background: #0A3D62;
+        padding: 20px;
+
+        position: fixed;      /* le menu flotte au-dessus */
+        top: 0;
+        right: 0;             /* collé à droite */
+        height: 100vh;        /* toute la hauteur */
+        width: 30%;           /* moitié de l'écran */
+        box-shadow: -4px 0 10px rgba(0,0,0,0.2); /* ombre élégante */
+        z-index: 999;         /* passe devant tout */
+    }
+
+    nav.show {
+        display: flex;
     }
 }
 
