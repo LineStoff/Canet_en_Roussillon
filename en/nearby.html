@@ -21,15 +21,15 @@
 <header>
 <div class="site-title">
 <img src="../images/logo.png" alt="Lever du Soleil Logo" class="logo">
-<h1><span class="line1">Apartment</span> <span class="line2">Lever du Soleil</span></h1>
+<h1>Sunrise Apartment</h1>
 </div>
 
 <nav id="menu">
 <a href="index.html">Home</a>
-<a href="apartment.html">The Apartment</a>
-<a href="reservation.html">Booking</a>
+<a href="apartement.html">The Apartment</a>
+<a href="booking.html">Booking</a>
 <a href="nearby.html">Nearby</a>
-<a href="gettingthere.html">Getting There</a>
+<a href="howtogetthere.html">Getting There</a>
 <a href="contact.html">Contact</a>
 <a href="../proximite.html">FR</a>
 </nav>
@@ -204,5 +204,23 @@
 </footer>
 
 <script src="../script.js"></script>
+
+<script>
+    const menuBtn = document.querySelector('.menu-btn');
+    const nav = document.querySelector('#menu');
+    const overlay = document.querySelector('.overlay');
+
+    // Ouvrir / fermer le menu
+    menuBtn.addEventListener('click', () => {
+        nav.classList.toggle('show');
+    });
+
+    // Fermer en cliquant sur l'overlay
+    overlay.addEventListener('click', () => {
+        nav.classList.remove('show');
+    });
+</script>
+
+
 </body>
 </html>

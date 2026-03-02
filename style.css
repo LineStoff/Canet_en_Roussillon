@@ -413,8 +413,8 @@ nav.show + .overlay {
 }
 
 .site-title .logo {
-    width: 80px;   /* taille du logo */
-    height: 80px;  /* tu peux ajuster */
+    width: 65px;   /* taille du logo */
+    height: 65px;  /* tu peux ajuster */
     object-fit: contain;
 }
 
