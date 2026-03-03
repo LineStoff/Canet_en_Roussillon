@@ -447,39 +447,34 @@ nav.show + .overlay {
 
 
 /*partenaire */
-.partners {
-    text-align: center;
-    padding: 40px 0;
-}
-
 .partners h2 {
-    margin-bottom: 20px;
-    font-size: 28px;
+    text-align: center;
 }
 
 .carousel {
-    width: 100%;
+    width: 100vw;
     overflow: hidden;
+    position: relative;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
 }
 
 .carousel-track {
     display: flex;
-    gap: 20px;
-    animation: scroll 25s linear infinite;
+    gap: 30px;
+    animation: scroll 18s linear infinite;
 }
 
 .carousel-track img {
-    width: 250px; /* taille des images */
-    height: 180px;
+    width: 260px;
+    height: 160px;
     object-fit: cover;
-    border-radius: 10px;
-    transition: transform 0.3s;
+    border-radius: 12px;
 }
 
-.carousel-track img:hover {
-    transform: scale(1.05);
-}
-
+/* Animation parfaitement fluide */
 @keyframes scroll {
     0% { transform: translateX(0); }
     100% { transform: translateX(-50%); }
@@ -488,8 +483,10 @@ nav.show + .overlay {
 /* Mobile */
 @media (max-width: 768px) {
     .carousel-track img {
-        width: 180px;
-        height: 110px;
+        width: 150px;
+        height: 100px;
     }
-    .carousel-track { animation: scroll 5s linear infinite; /* plus rapide sur mobile */ }
+    .carousel-track {
+        animation-duration: 6s;
+    }
 }
