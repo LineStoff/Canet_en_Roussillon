@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-LJ1EBTQRZ7"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-LJ1EBTQRZ7');
+  
+</script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Appartement Méditerranée – Accueil</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="galerie-header">
+    <div class="site-title">
+    <img src="images/logo.png" alt="Logo Lever du Soleil" class="logo">
+   <h1><span class="line1">Appartement</span> <span class="line2">Lever du Soleil</span></h1>
+
+</div>
+
+    <nav id="menu">
+        <a href="index.html">Accueil</a>
+        <a href="appartement.html">L'appartement</a>
+        <a href="reservation.html">Réservation</a>
+        <a href="proximite.html">À proximité</a>
+        <a href="syrendre.html">S'y rendre</a>
+        <a href="galerie.html">Galerie</a>
+        <a href="contact.html">Contact</a>
+        <a href="en/gallery.html">EN</a>
+    </nav>
+    <div class="overlay"></div>
+    <div class="menu-btn">☰</div>
+</header>
+
+<h1>Galerie des souvenirs</h1>
+    <p>Partagez vos plus belles photos de Canet-en-Roussillon</p>
+<section class="upload-section">
+    <a class="upload-button" href="https://forms.gle/2XgWDfAJG2iUU2R4A" target="_blank">
+        Ajouter vos photos
+    </a>
+</section>
+
+<section class="gallery">
+
+         <div class="photo-card">
+        <img src="images/GALERIE/port1.jpg" alt="Canet">
+        <div class="photo-info"></div>
+    </div>
+
+    <div class="photo-card">
+        <img src="images/GALERIE/bateau1.jpg" alt="Canet">
+        <div class="photo-info"></div>
+    </div>
+
+    <div class="photo-card">
+        <img src="images/GALERIE/grande_roue.jpg" alt="Canet">
+        <div class="photo-info"></div>
+    </div>
+
+  <div class="photo-card">
+        <img src="images/GALERIE/oiseau1.jpg" alt="Canet">
+        <div class="photo-info"></div>
+    </div>
+
+ 
+
+      <div class="photo-card">
+        <img src="images/GALERIE/palmier2.jpg" alt="Canet">
+        <div class="photo-info"></div>
+    </div>
+
+      <div class="photo-card">
+        <img src="images/GALERIE/plage.jpg" alt="Canet">
+        <div class="photo-info"></div>
+    </div>
+
+      <div class="photo-card">
+        <img src="images/GALERIE/vague1.jpg" alt="Canet">
+        <div class="photo-info"></div>
+    </div>
+ 
+
+      <div class="photo-card">
+        <img src="images/GALERIE/port2.jpg" alt="Canet">
+        <div class="photo-info"></div>
+    </div>
+
+   
+
+      <div class="photo-card">
+        <img src="images/GALERIE/port4.jpg" alt="Canet">
+        <div class="photo-info"></div>
+    </div>
+
+    
+
+
+      <div class="photo-card">
+        <img src="images/GALERIE/vague2.jpg" alt="Canet">
+        <div class="photo-info"></div>
+    </div>
+
+       <div class="photo-card">
+        <img src="images/GALERIE/port3.jpg" alt="Canet">
+        <div class="photo-info"></div>
+    </div>
+
+
+
+
+    <!--
+     <div class="photo-card">
+        <img src="images/exterieur5.jpg" alt="Canet">
+        <div class="photo-info">Louise, mai 2025</div>
+    </div>
+        -->
+
+
+</section>
+
+
+
+
+<footer>
+    <p>© 2026 - Appartement Lever du Soleil</p>
+</footer>
+
+<script src="script.js"></script>
+
+<script>
+    const menuBtn = document.querySelector('.menu-btn');
+    const nav = document.querySelector('#menu');
+    const overlay = document.querySelector('.overlay');
+
+    // Ouvrir / fermer le menu
+    menuBtn.addEventListener('click', () => {
+        nav.classList.toggle('show');
+    });
+
+    // Fermer en cliquant sur l'overlay
+    overlay.addEventListener('click', () => {
+        nav.classList.remove('show');
+    });
+</script>
+
+</body>
+</html>

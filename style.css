@@ -495,3 +495,103 @@ nav.show + .overlay {
         animation-duration: 6s;
     }
 }
+
+
+
+
+/* PAGE GALERIE */
+.galerie-header {
+    text-align: center;
+    padding: 40px 20px;
+}
+
+
+header h1 {
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 18px;
+    color: #555;
+}
+
+/* Bouton d'ajout */
+.upload-section {
+    text-align: center;
+    margin: 20px 0 40px;
+}
+
+.upload-button {
+    background-color: #ffcc33;
+    padding: 12px 25px;
+    border-radius: 8px;
+    color: #000;
+    font-weight: bold;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.upload-button:hover {
+    background-color: #ffdd55;
+}
+
+/* Galerie */
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr)); /* plus large */
+    gap: 25px;
+}
+
+
+.photo-card {
+    background: #fff;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.photo-card img {
+    width: 100%;
+    height: 300px; /* plus grand */
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+
+.photo-info {
+    padding: 10px;
+    font-size: 14px;
+    color: #444;
+    text-align: center;
+    background: #f7f7f7;
+}
+
+
+
+
+/* Galerie de la page Appartement */
+/* Galerie de la page Appartement */
+.gallery-appartement {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.gallery-appartement img {
+    width: calc(33% - 10px);
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.15);
+}
+
+/* Version mobile */
+@media (max-width: 768px) {
+    .gallery-appartement img {
+        width: 100%;
+    }
+}
+
+
+.galerie-header nav {
+    text-align: left !important;
+}
