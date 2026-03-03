@@ -1,4 +1,9 @@
 /* --- GLOBAL --- */
+:root {
+    color-scheme: light; /*interdiction mode somnbre*/
+}
+
+
 body {
     margin: 0;
     font-family: 'Poppins', sans-serif;
