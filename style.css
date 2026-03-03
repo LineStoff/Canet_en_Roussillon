@@ -439,3 +439,57 @@ nav.show + .overlay {
         font-size: 25px; /* Ajuste si tu veux plus petit */
     }
 }
+
+
+
+
+
+
+
+/*partenaire */
+.partners {
+    text-align: center;
+    padding: 40px 0;
+}
+
+.partners h2 {
+    margin-bottom: 20px;
+    font-size: 28px;
+}
+
+.carousel {
+    width: 100%;
+    overflow: hidden;
+}
+
+.carousel-track {
+    display: flex;
+    gap: 20px;
+    animation: scroll 25s linear infinite;
+}
+
+.carousel-track img {
+    width: 250px; /* taille des images */
+    height: 180px;
+    object-fit: cover;
+    border-radius: 10px;
+    transition: transform 0.3s;
+}
+
+.carousel-track img:hover {
+    transform: scale(1.05);
+}
+
+@keyframes scroll {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-50%); }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+    .carousel-track img {
+        width: 180px;
+        height: 110px;
+    }
+    .carousel-track { animation: scroll 5s linear infinite; /* plus rapide sur mobile */ }
+}
