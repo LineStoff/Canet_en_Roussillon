@@ -90,7 +90,7 @@ nav a:hover {
     box-shadow: 0 4px 12px rgba(0,0,0,0.1);
 }
 
-/* --- GALLERY --- */
+/* --- GALLERY ---
 .gallery {
     display: flex;
     flex-wrap: wrap;
@@ -102,6 +102,7 @@ nav a:hover {
     border-radius: 10px;
     box-shadow: 0 3px 10px rgba(0,0,0,0.15);
 }
+     */
 
 /* --- ACTIVITIES --- */
 .activity {
