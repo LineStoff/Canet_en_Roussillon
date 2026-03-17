@@ -1,15 +1,49 @@
 /* --- GLOBAL --- */
+
+html, body {
+    overflow-x: hidden;      /* bloque le scroll horizontal */
+    overflow-y: auto;        /* permet le scroll vertical */
+    max-width: 100%;
+}
+
+/* Chrome, Edge, Safari */
+html::-webkit-scrollbar,
+body::-webkit-scrollbar {
+    width: 0 !important;
+    height: 0 !important;
+    display: none !important;
+}
+
+/* Firefox */
+html, body {
+    scrollbar-width: none !important;
+}
+
+/* IE / vieux Edge */
+html, body {
+    -ms-overflow-style: none !important;
+}
+
+
+
+
+/* Fusion de toutes les règles body */
+body {
+    scrollbar-width: none;        /* Firefox */
+    -ms-overflow-style: none;     /* IE / Edge */
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background: #D7EEF7;
+    color: #0A3D62;
+}
+
+
 :root {
     color-scheme: light; /*interdiction mode somnbre*/
 }
 
 
-body {
-    margin: 0;
-    font-family: 'Poppins', sans-serif;
-    background: #D7EEF7; /* bleu très clair, ambiance mer */
-    color: #0A3D62;
-}
+
 
 h1, h2 {
     color: #0A3D62;
@@ -33,12 +67,14 @@ header {
 nav {
     display: flex;
     gap: 20px;
+
 }
 
 nav a {
     color: white;
     text-decoration: none;
     font-weight: bold;
+    font-size: 19px;
 }
 
 nav a:hover {
@@ -147,6 +183,10 @@ footer {
 
 /* --- MOBILE --- */
 @media (max-width: 768px) {
+     nav a {
+        font-size: 18px;   /* augmente ici */
+        font-weight: 600;  /* optionnel : rend plus lisible */
+    }
 
     nav {
         display: none;
