@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<script>
+  gtag('consent', 'default', {
+    'ad_storage': 'denied',
+    'analytics_storage': 'denied',
+    'ad_user_data': 'denied',
+    'ad_personalization': 'denied'
+  });
+</script>
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-LJ1EBTQRZ7"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-LJ1EBTQRZ7');
+</script>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Privacy Policy</title>
+<link rel="stylesheet" href="../style.css">
+
+<style>
+    .legal-container {
+        max-width: 900px;
+        margin: 60px auto;
+        background: #F5EEDC;
+        padding: 40px;
+        border-radius: 12px;
+        box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+    }
+
+    .legal-container h1 {
+        font-size: 32px;
+        margin-bottom: 20px;
+        color: #0A3D62;
+    }
+
+    .legal-container h2 {
+        margin-top: 40px;
+        font-size: 22px;
+        color: #0A3D62;
+    }
+
+    .legal-container p {
+        line-height: 1.7;
+        margin-bottom: 15px;
+    }
+</style>
+</head>
+
+<body>
+
+<header>
+    <div class="site-title">
+        <img src="../images/logo.png" alt="Lever du Soleil Logo" class="logo">
+        <h1><span class="line1">Apartment</span> <span class="line2">Lever du Soleil</span></h1>
+    </div>
+
+    <nav id="menu">
+        <a href="../index.html">Home</a>
+        <a href="apartement.html">The Apartment</a>
+        <a href="booking.html">Booking</a>
+        <a href="nearby.html">Nearby</a>
+        <a href="howtogetthere.html">How to Get There</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="contact.html">Contact</a>
+
+        <a href="../fr/confidentiality.html">
+            <img src="../images/DRAPEAU/drapeau_francais.png" alt="FR" style="width:18px; height:auto; vertical-align:middle; margin-right:4px;">
+            FR
+        </a>
+    </nav>
+
+    <div class="overlay"></div>
+    <div class="menu-btn">☰</div>
+</header>
+
+<section class="legal-container">
+
+    <h1>Privacy Policy</h1>
+
+    <h2>1. Data Collected</h2>
+    <p>
+        This website only collects information submitted through the contact form:
+        name, email address, and message.
+    </p>
+
+    <h2>2. Purpose</h2>
+    <p>
+        This information is used solely to respond to your inquiries.
+        It is never sold or shared with third parties.
+    </p>
+
+    <h2>3. Google Analytics</h2>
+    <p>
+        This website uses Google Analytics to measure traffic.
+        No cookies are placed without your consent.
+    </p>
+
+    <h2>4. Data Retention</h2>
+    <p>
+        Messages sent through the contact form are kept only for the time necessary to process your request.
+    </p>
+
+    <h2>5. Your Rights</h2>
+    <p>
+        You may request access, correction, or deletion of your personal data
+        by writing to: 
+        </p>
+    </p>
+
+        lineleclercq-soethoff@gmail.com
+        
+    </p>
+
+    <h2>6. Partner Content</h2>
+    <p>
+        The “Our Partners” section may display excerpts, logos, or links to external websites.
+        No tracking or data collection is performed through these elements.
+        Visitors are subject to the privacy policies of partner websites when accessing them.
+    </p>
+
+</section>
+
+<footer>
+    <p>
+        © 2026 - Apartment Lever du Soleil • 
+        <a href="legal.html">Legal Notice</a> • 
+        <a href="confidentiality.html">Privacy Policy</a>
+    </p>
+</footer>
+
+<script src="../script.js"></script>
+
+<script>
+    const menuBtn = document.querySelector('.menu-btn');
+    const nav = document.querySelector('#menu');
+    const overlay = document.querySelector('.overlay');
+
+    menuBtn.addEventListener('click', () => {
+        nav.classList.toggle('show');
+    });
+
+    overlay.addEventListener('click', () => {
+        nav.classList.remove('show');
+    });
+</script>
+
+</body>
+</html>

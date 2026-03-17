@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+
+
+<script>
+  gtag('consent', 'default', {
+    'ad_storage': 'denied',
+    'analytics_storage': 'denied',
+    'ad_user_data': 'denied',
+    'ad_personalization': 'denied'
+  });
+</script>
+
+
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-LJ1EBTQRZ7"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-LJ1EBTQRZ7');
+</script>
+
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Politique de confidentialité</title>
+    <link rel="stylesheet" href="../style.css">
+
+    <style>
+        .legal-container {
+            max-width: 900px;
+            margin: 60px auto;
+            background: #F5EEDC;
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+        }
+
+        .legal-container h1 {
+            font-size: 32px;
+            margin-bottom: 20px;
+            color: #0A3D62;
+        }
+
+        .legal-container h2 {
+            margin-top: 40px;
+            font-size: 22px;
+            color: #0A3D62;
+        }
+
+        .legal-container p {
+            line-height: 1.7;
+            margin-bottom: 15px;
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <div class="site-title">
+        <img src="../images/logo.png" alt="Logo Lever du Soleil" class="logo">
+        <h1><span class="line1">Appartement</span> <span class="line2">Lever du Soleil</span></h1>
+    </div>
+
+    <nav id="menu">
+        <a href="../index.html">Accueil</a>
+        <a href="apartement.html">L'appartement</a>
+        <a href="booking.html">Réservation</a>
+        <a href="nearby.html">À proximité</a>
+        <a href="howtogetthere.html">S'y rendre</a>
+        <a href="gallery.html">Galerie</a>
+        <a href="contact.html">Contact</a>
+
+        <a href="../en/legal.html">
+            <img src="../images/DRAPEAU/drapeau_anglais.png" alt="EN" style="width:18px; height:auto; vertical-align:middle; margin-right:4px;">
+            EN
+        </a>
+    </nav>
+
+    <div class="overlay"></div>
+    <div class="menu-btn">☰</div>
+</header>
+
+
+<section class="legal-container">
+
+    <h1>Mentions légales</h1>
+
+  <h2>1. Éditeur du site</h2>
+        <p>
+        Nom : Line Leclercq-Soethoff<br>
+        Email : lineleclercq-soethoff@gmail.com<br>
+        Directrice de publication : Line Leclercq-Soethoff
+        </p>
+
+        <p>
+        Conformément à l’article 6-III-2 de la loi n°2004-575 du 21 juin 2004 pour la Confiance dans l’Économie Numérique (LCEN), 
+        l’éditeur du site a choisi de ne pas rendre publique son adresse personnelle.  
+        Son identité complète est conservée par l’hébergeur et pourra être communiquée aux autorités compétentes en cas de procédure légale.
+        </p>
+
+        <h2>2. Hébergement</h2>
+        <p>
+        Le site est hébergé par :<br>
+        <strong>GitHub, Inc.</strong><br>
+        88 Colin P Kelly Jr St, San Francisco, CA 94107, USA<br>
+        Site web : https://github.com
+        </p>
+
+        <h2>3. Nom de domaine</h2>
+        <p>
+        Le nom de domaine est enregistré auprès de :<br>
+        <strong>OVH SAS</strong><br>
+        2 rue Kellermann – 59100 Roubaix – France<br>
+        Site web : https://www.ovh.com
+        </p>
+
+        <h2>4. Propriété intellectuelle</h2>
+        <p>
+        L’ensemble des contenus présents sur le site (textes, images, photos, logo, design) est protégé par le droit d’auteur.  
+        Toute reproduction, modification ou diffusion sans autorisation est interdite.
+        </p>
+
+        <h2>5. Liens externes</h2>
+        <p>
+        Le site peut contenir des liens vers des sites externes.  
+        L’éditeur n’exerce aucun contrôle sur ces sites et décline toute responsabilité quant à leur contenu.
+        </p>
+
+        <h2>6. Partenaires</h2>
+        <p>
+        La section “Nos partenaires” présente des entreprises locales et peut afficher leurs logos, extraits d’articles ou visuels.  
+        Ces éléments restent la propriété exclusive de leurs auteurs et entreprises respectives.  
+        Ils sont utilisés uniquement à titre informatif, avec redirection vers les sites officiels des partenaires.
+        </p>
+
+        <h2>7. Contact</h2>
+        <p>
+        Pour toute question concernant le site, vous pouvez écrire à : lineleclercq-soethoff@gmail.com
+        </p>
+
+
+</section>
+
+<footer>
+    <p>
+    © 2026 - Appartement Lever du Soleil • 
+    <a href="legal.html">Mentions légales</a> • 
+    <a href="confidentiality.html">Politique de confidentialité</a>
+    </p>
+</footer>
+
+<script src="../script.js"></script>
+
+
+<script>
+    const menuBtn = document.querySelector('.menu-btn');
+    const nav = document.querySelector('#menu');
+    const overlay = document.querySelector('.overlay');
+
+    // Ouvrir / fermer le menu
+    menuBtn.addEventListener('click', () => {
+        nav.classList.toggle('show');
+    });
+
+    // Fermer en cliquant sur l'overlay
+    overlay.addEventListener('click', () => {
+        nav.classList.remove('show');
+    });
+</script>
+
+
+</body>
+</html>

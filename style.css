@@ -180,6 +180,17 @@ footer {
     color: white;
     margin-top: 40px;
 }
+footer a {
+    color: white;          /* liens en blanc */
+    text-decoration: none; /* optionnel : pas de soulignement */
+    font-weight: 600;      /* optionnel : un peu plus lisible */
+}
+
+footer a:hover {
+    color: #F5EEDC;        /* optionnel : beige clair au survol */
+}
+
+
 
 /* --- MOBILE --- */
 @media (max-width: 768px) {

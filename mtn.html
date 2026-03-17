@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site en maintenance</title>
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background: #0A3D62; /* bleu profond du site */
+            color: white;
+            font-family: "Inter", sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            text-align: center;
+        }
+
+        .container {
+            max-width: 500px;
+            padding: 20px;
+        }
+
+        .logo {
+            width: 90px;
+            margin-bottom: 20px;
+            animation: fadeIn 1.2s ease;
+        }
+
+        h1 {
+            font-size: 2.2rem;
+            margin-bottom: 10px;
+            letter-spacing: 1px;
+            color: #F5EEDC; /* beige du site */
+            animation: fadeIn 1.5s ease;
+        }
+
+        p {
+            font-size: 1.1rem;
+            opacity: 0.9;
+            margin-bottom: 25px;
+            animation: fadeIn 1.8s ease;
+        }
+
+        .loader {
+            width: 45px;
+            height: 45px;
+            border: 4px solid rgba(255,255,255,0.2);
+            border-top-color: #F5EEDC; /* beige */
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+            margin: 0 auto;
+        }
+
+        @keyframes spin {
+            to { transform: rotate(360deg); }
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <img src="images/logo.png" alt="Logo Lever du Soleil" class="logo">
+
+        <h1>Nous revenons bientôt</h1>
+
+        <p>Le site est actuellement en maintenance.<br>
+        Nous travaillons pour vous offrir une expérience encore meilleure.</p>
+
+        <div class="loader"></div>
+    </div>
+</body>
+</html>

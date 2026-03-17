@@ -1,61 +1,180 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
+    
+    
+    <!--
+    localStorage.removeItem("cookieConsent")
+-->
+<script>
+  gtag('consent', 'default', {
+    'ad_storage': 'denied',
+    'analytics_storage': 'denied',
+    'ad_user_data': 'denied',
+    'ad_personalization': 'denied'
+  });
+</script>
+
+
+
+    <!-- Google tag (gtag.js)
+-->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-LJ1EBTQRZ7"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-LJ1EBTQRZ7');
+</script>
+
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Site en maintenance</title>
-    <style>
-        body {
-            margin: 0;
-            padding: 0;
-            background: #0d0d0d;
-            color: #ffffff;
-            font-family: "Inter", sans-serif;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            text-align: center;
-        }
-
-        .container {
-            max-width: 500px;
-            padding: 20px;
-        }
-
-        h1 {
-            font-size: 2.2rem;
-            margin-bottom: 10px;
-            letter-spacing: 1px;
-        }
-
-        p {
-            font-size: 1.1rem;
-            opacity: 0.8;
-            margin-bottom: 25px;
-        }
-
-        .loader {
-            width: 45px;
-            height: 45px;
-            border: 4px solid rgba(255,255,255,0.2);
-            border-top-color: #ffffff;
-            border-radius: 50%;
-            animation: spin 1s linear infinite;
-            margin: 0 auto;
-        }
-
-        @keyframes spin {
-            to { transform: rotate(360deg); }
-        }
-    </style>
+    <title>L'appartement</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="container">
-        <h1>Nous revenons bientôt</h1>
-        <p>Le site est actuellement en maintenance.  
-        Nous travaillons pour vous offrir une meilleure expérience.</p>
-        <div class="loader"></div>
+
+<header>
+    <div class="site-title">
+    <img src="images/logo.png" alt="Logo Lever du Soleil" class="logo">
+       <h1><span class="line1">Appartement</span> <span class="line2">Lever du Soleil</span></h1>
+</div>
+    <nav id="menu">
+        <a href="index.html">Accueil</a>
+        <a href="fr/apartement.html">L'appartement</a>
+        <a href="fr/booking.html">Réservation</a>
+        <a href="fr/nearby.html">À proximité</a>
+        <a href="fr/howtogetthere.html">S'y rendre</a>
+        <a href="fr/gallery.html">Galerie</a>
+        <a href="fr/contact.html">Contact</a>
+<a href="en/index.html">
+    <img src="images/DRAPEAU/drapeau_anglais.png" alt="EN" style="width:18px; height:auto; vertical-align:middle; margin-right:4px;">
+    EN
+</a>
+    </nav>
+    <div class="overlay"></div>
+    <div class="menu-btn">☰</div>
+</header>
+
+
+
+<section class="hero">
+    <h1>Votre séjour en bord de mer</h1>
+    <p>Un appartement lumineux, et idéalement situé pour profiter de la Méditerranée.</p>
+    <a class="btn" href="fr/apartement.html">Découvrir l'appartement</a>
+</section>
+
+
+<!--
+
+<section class="content avis">
+    <h2>Ils ont adoré leur séjour</h2>
+
+    <div class="avis-container">
+
+        <div class="avis-card">
+            <p class="avis-texte">“Appartement impeccable, très propre et idéalement situé. On reviendra !”</p>
+            <p class="avis-auteur">- Line, août 2024</p>
+        </div>
+
+        <div class="avis-card">
+            <p class="avis-texte">“Super séjour, hôte très réactif. La plage à deux minutes, parfait.”</p>
+            <p class="avis-auteur">- Marc, juillet 2025</p>
+        </div>
+          
+        <div class="avis-card">
+            <p class="avis-texte">“J'ai passé un super séjour dans cet appartement avec tout à proximité.”</p>
+            <p class="avis-auteur">- Joffrey, août 2025</p>
+        </div>
+        
     </div>
+</section>
+-->
+
+<section class="partners">
+    <h2>Notre partenaire Lijocrea</h2>
+
+    <div class="carousel">
+        <div class="carousel-track">
+            <a href="https://lijocrea.fr/products/decoration-football" target="_blank">
+                <img src="images/LIJO/lijo_foot.jpg" alt="Partenaire 1">
+            </a>
+
+            <a href="https://lijocrea.fr/products/decoration-murale-tortue" target="_blank">
+                <img src="images/LIJO/lijo_tortue.jpg" alt="Partenaire 2">
+            </a>
+
+              <a href="https://lijocrea.fr/products/marque-places-fleurs-coeur-bois" target="_blank">
+                <img src="images/LIJO/lijo_marque_place.jpg" alt="Partenaire 5">
+            </a>
+
+            <a href="https://lijocrea.fr/products/animaux-jungle-decoration-murale" target="_blank">
+                <img src="images/LIJO/lijo_savane.jpg" alt="Partenaire 3">
+            </a>
+
+            <a href="https://lijocrea.fr/products/lightbox-led-cheval" target="_blank">
+                <img src="images/LIJO/lijo_cheval.jpg" alt="Partenaire 4">
+            </a>
+
+              <a href="https://lijocrea.fr/products/decoration-football" target="_blank">
+                <img src="images/LIJO/lijo_foot.jpg" alt="Partenaire 1">
+            </a>
+
+            <a href="https://lijocrea.fr/products/decoration-murale-tortue" target="_blank">
+                <img src="images/LIJO/lijo_tortue.jpg" alt="Partenaire 2">
+            </a>
+
+              <a href="https://lijocrea.fr/products/marque-places-fleurs-coeur-bois" target="_blank">
+                <img src="images/LIJO/lijo_marque_place.jpg" alt="Partenaire 5">
+            </a>
+
+            <a href="https://lijocrea.fr/products/animaux-jungle-decoration-murale" target="_blank">
+                <img src="images/LIJO/lijo_savane.jpg" alt="Partenaire 3">
+            </a>
+
+            <a href="https://lijocrea.fr/products/lightbox-led-cheval" target="_blank">
+                <img src="images/LIJO/lijo_cheval.jpg" alt="Partenaire 4">
+            </a>
+            
+        
+
+        </div>
+    </div>
+</section>
+
+
+
+<footer>
+    <p>
+    © 2026 - Appartement Lever du Soleil • 
+    <a href="fr/legal.html">Mentions légales</a> • 
+    <a href="fr/confidentiality.html">Politique de confidentialité</a>
+    </p>
+</footer>
+
+
+<script src="script.js"></script>
+
+<script>
+    const menuBtn = document.querySelector('.menu-btn');
+    const nav = document.querySelector('#menu');
+    const overlay = document.querySelector('.overlay');
+
+    // Ouvrir / fermer le menu
+    menuBtn.addEventListener('click', () => {
+        nav.classList.toggle('show');
+    });
+
+    // Fermer en cliquant sur l'overlay
+    overlay.addEventListener('click', () => {
+        nav.classList.remove('show');
+    });
+</script>
+
+
+
+
 </body>
 </html>
