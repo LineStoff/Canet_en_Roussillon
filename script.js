@@ -4,8 +4,6 @@ function toggleMenu() {
 
 
 
-
-
 // --- Consent Mode v2 (Google Analytics) ---
 if (typeof gtag === "function") {
     gtag('consent', 'default', {
@@ -50,20 +48,26 @@ document.addEventListener("DOMContentLoaded", function () {
             background:#0A3D62;
             color:white;
             border:none;
-            padding:10px 18px;
-            border-radius:8px;
+            padding:12px 22px;
+            border-radius:10px;
             cursor:pointer;
+            font-weight:600;
+            transition:0.2s;
             margin-right:10px;
         ">Accepter</button>
 
-        <button id="cookie-refuse" style="
-            background:#ccc;
-            color:#333;
-            border:none;
-            padding:10px 18px;
-            border-radius:8px;
-            cursor:pointer;
-        ">Refuser</button>
+
+       <button id="cookie-refuse" style="
+        background:#F5EEDC;
+        color:#0A3D62;
+        border:none;
+        padding:12px 22px;
+        border-radius:10px;
+        cursor:pointer;
+        font-weight:600;
+        transition:0.2s;
+    ">Refuser</button>
+
     `;
 
     document.body.appendChild(banner);
@@ -100,3 +104,18 @@ document.addEventListener("DOMContentLoaded", function () {
         banner.remove();
     };
 });
+
+
+document.getElementById("cookie-accept").onmouseover = function() {
+    this.style.opacity = "0.85";
+};
+document.getElementById("cookie-accept").onmouseout = function() {
+    this.style.opacity = "1";
+};
+
+document.getElementById("cookie-refuse").onmouseover = function() {
+    this.style.opacity = "0.85";
+};
+document.getElementById("cookie-refuse").onmouseout = function() {
+    this.style.opacity = "1";
+};
